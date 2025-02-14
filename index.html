@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΧΓΓ1 - Τα Οξέα</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ΧΓΓ1 - Τα Οξέα</h1>
+
+    <h2>Ιδιότητες των Οξέων</h2>
+    <ul>
+        <li>Έχουν γεύση ξινή.</li>
+        <li>Μεταβάλλουν το χρώμα των δεικτών.</li>
+        <li>Αντιδρούν με ανθρακικά άλατα και παράγουν διοξείδιο του άνθρακα.</li>
+        <li>Αντιδρούν με μέταλλα και παράγουν αέριο υδρογόνο.</li>
+    </ul>
+
+    <h2>Ορισμός των Οξέων</h2>
+    <p>Οξέα ονομάζονται οι ενώσεις οι οποίες, όταν διαλυθούν στο νερό, παράγουν κατιόντα υδρογόνου.</p>
+
+    <h2>pH των Οξέων</h2>
+    <ul>
+        <li>Σε κάθε όξινο διάλυμα ο αριθμός των κατιόντων υδρογόνου είναι μεγαλύτερος από τον αριθμό των ανιόντων υδροξειδίου.</li>
+        <li>Το pH των όξινων διαλυμάτων είναι μικρότερο από 7.</li>
+        <li>Όσο μεγαλύτερη η συγκέντρωση των κατιόντων υδρογόνου, τόσο μικρότερο το pH.</li>
+    </ul>
+
+    <h2>Κουίζ</h2>
+    <form id="quizForm">
+        <p>1. Πιο όξινο είναι το διάλυμα με pH:</p>
+        <input type="radio" name="q1" value="α"> 3<br>
+        <input type="radio" name="q1" value="β"> 5<br>
+        <input type="radio" name="q1" value="γ"> 6<br>
+
+        <p>2. Περισσότερα κατιόντα υδρογόνου, στον ίδιο όγκο, έχει το διάλυμα με pH:</p>
+        <input type="radio" name="q2" value="α"> 6<br>
+        <input type="radio" name="q2" value="β"> 4<br>
+        <input type="radio" name="q2" value="γ"> 2<br>
+
+        <p>3. Το καθαρό νερό έχει pH:</p>
+        <input type="radio" name="q3" value="α"> 0<br>
+        <input type="radio" name="q3" value="β"> 3<br>
+        <input type="radio" name="q3" value="γ"> 7<br>
+
+        <p>4. Αν σε ένα όξινο διάλυμα προσθέσουμε μπλε της βρωμοθυμόλης, το διάλυμα γίνεται:</p>
+        <input type="radio" name="q4" value="α"> μπλε<br>
+        <input type="radio" name="q4" value="β"> κόκκινο<br>
+        <input type="radio" name="q4" value="γ"> κίτρινο<br>
+
+        <p>5. Ένα διάλυμα στο οποίο ο αριθμός των κατιόντων υδρογόνου είναι μεγαλύτερος από τον αριθμό των ανιόντων υδροξειδίου έχει pH:</p>
+        <input type="radio" name="q5" value="α"> 8<br>
+        <input type="radio" name="q5" value="β"> 7<br>
+        <input type="radio" name="q5" value="γ"> 6<br>
+
+        <p>6. Ένα διάλυμα στο οποίο ο αριθμός των κατιόντων υδρογόνου είναι μεγαλύτερος από τον αριθμό των ανιόντων υδροξειδίου είναι:</p>
+        <input type="radio" name="q6" value="α"> βασικό<br>
+        <input type="radio" name="q6" value="β"> ουδέτερο<br>
+        <input type="radio" name="q6" value="γ"> όξινο<br>
+
+        <p>7. Αν προσθέσω καθαρό νερό σε ένα όξινο διάλυμα, αυτό θα:</p>
+        <input type="radio" name="q7" value="α"> γίνει ουδέτερο<br>
+        <input type="radio" name="q7" value="β"> γίνει βασικό<br>
+        <input type="radio" name="q7" value="γ"> παραμείνει όξινο<br>
+
+        <p>8. Αν προσθέσω μεγάλη ποσότητα καθαρού νερού σε ένα όξινο διάλυμα, αυτό θα:</p>
+        <input type="radio" name="q8" value="α"> γίνει ουδέτερο<br>
+        <input type="radio" name="q8" value="β"> γίνει βασικό<br>
+        <input type="radio" name="q8" value="γ"> παραμείνει όξινο<br>
+
+        <p>9. Ο όξινος χαρακτήρας περιλαμβάνει:</p>
+        <input type="radio" name="q9" value="α"> γεύση ξινή<br>
+        <input type="radio" name="q9" value="β"> μεταβολή χρώματος των δεικτών<br>
+        <input type="radio" name="q9" value="γ"> παραγωγή υδρογόνου από μέταλλα<br>
+        <input type="radio" name="q9" value="δ"> όλα τα παραπάνω<br>
+
+        <button type="button" onclick="checkAnswers()">Υποβολή</button>
+    </form>
+
+    <p id="result"></p>
+    <canvas id="fireworks"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
