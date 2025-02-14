@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΧΓΓ1 - Τα Οξέα</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ΧΓΓ1 - Τα Οξέα</h1>
+
+    <h2>Ιδιότητες των Οξέων</h2>
+    <ul>
+        <li>Έχουν ξινή γεύση.</li>
+        <li>Μεταβάλλουν το χρώμα των δεικτών (π.χ. το μπλε της βρωμοθυμόλης γίνεται κίτρινο).</li>
+        <li>Αντιδρούν με ανθρακικά άλατα και παράγουν διοξείδιο του άνθρακα.</li>
+        <li>Αντιδρούν με μέταλλα και παράγουν αέριο υδρογόνο.</li>
+    </ul>
+
+    <h2>Κουίζ</h2>
+    <form id="quizForm">
+        <p>1. Η ξινή γεύση του γιαουρτιού οφείλεται:</p>
+        <input type="radio" name="q1" value="β"> γαλακτικό οξύ<br>
+        <input type="radio" name="q1" value="α"> κιτρικό οξύ<br>
+        <input type="radio" name="q1" value="γ"> οξικό οξύ<br>
+
+        <p>2. Αν σε ένα όξινο διάλυμα προσθέσουμε μπλε της βρωμοθυμόλης, το διάλυμα θα γίνει:</p>
+        <input type="radio" name="q2" value="α"> μπλε<br>
+        <input type="radio" name="q2" value="γ"> κίτρινο<br>
+        <input type="radio" name="q2" value="β"> κόκκινο<br>
+
+        <p>3. Το καθαρό νερό έχει pH:</p>
+        <input type="radio" name="q3" value="α"> 0<br>
+        <input type="radio" name="q3" value="β"> 3<br>
+        <input type="radio" name="q3" value="γ"> 7<br>
+
+        <p>4. Ένα διάλυμα με pH μικρότερο από 7 είναι:</p>
+        <input type="radio" name="q4" value="α"> βασικό<br>
+        <input type="radio" name="q4" value="β"> ουδέτερο<br>
+        <input type="radio" name="q4" value="γ"> όξινο<br>
+
+        <p>5. Αν προσθέσουμε νερό σε ένα όξινο διάλυμα, το pH του:</p>
+        <input type="radio" name="q5" value="α"> αυξάνεται<br>
+        <input type="radio" name="q5" value="β"> μειώνεται<br>
+        <input type="radio" name="q5" value="γ"> παραμένει το ίδιο<br>
+
+        <p>6. Το στομάχι μας περιέχει:</p>
+        <input type="radio" name="q6" value="α"> υδροχλωρικό οξύ<br>
+        <input type="radio" name="q6" value="β"> θειικό οξύ<br>
+        <input type="radio" name="q6" value="γ"> νιτρικό οξύ<br>
+
+        <p>7. Το ξύδι περιέχει:</p>
+        <input type="radio" name="q7" value="α"> κιτρικό οξύ<br>
+        <input type="radio" name="q7" value="β"> οξικό οξύ<br>
+        <input type="radio" name="q7" value="γ"> φωσφορικό οξύ<br>
+
+        <p>8. Το pH του στομάχου είναι περίπου:</p>
+        <input type="radio" name="q8" value="α"> 1-2<br>
+        <input type="radio" name="q8" value="β"> 7-8<br>
+        <input type="radio" name="q8" value="γ"> 12-13<br>
+
+        <p>9. Το pH ενός ισχυρού οξέος είναι:</p>
+        <input type="radio" name="q9" value="α"> 12<br>
+        <input type="radio" name="q9" value="β"> 7<br>
+        <input type="radio" name="q9" value="γ"> 1<br>
+
+        <p>10. Το θειικό οξύ :</p>
+        <input type="radio" name="q10" value="α"> αλλαζει το χρωμα των δεικτων<br>
+        <input type="radio" name="q10" value="β"> αντιδρα με μεταλα<br>
+        <input type="radio" name="q10" value="γ"> και στα δύο παραπάνω<br>
+
+        <button type="button" onclick="checkAnswers()">Υποβολή</button>
+    </form>
+
+    <p id="result"></p>
+    <canvas id="fireworks"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
